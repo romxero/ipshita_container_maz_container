@@ -15,10 +15,14 @@ Author "Randall Cab White - rcwhite@stanford.edu"
   apt-get -ym install build-essential curl wget git
   
 ### Spack stuff 
+cd /
 git clone https://github.com/spack/spack.git
 
 #cd into spack directory:
 cd spack*
+
+#spack paths
+. share/spack/setup-env.sh
 
 #deps
 
@@ -215,3 +219,4 @@ pip3 install ipyvolume metpy lagranto protobuf
 %environment
 #set up spack environment
 export IMAGE_NAME="ipshita_mazama_image"
+
