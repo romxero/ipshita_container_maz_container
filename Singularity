@@ -26,7 +26,10 @@ cd spack*
 #toolchain
 ./bin/spack install gcc
 ./bin/spack install gdb
+./bin/spack install rr
 ./bin/spack install autoconf
+./bin/spack install autogen
+./bin/spack install automake
 ./bin/spack install gmake
 ./bin/spack install cmake
 ./bin/spack install openmpi
@@ -48,13 +51,23 @@ cd spack*
 ./bin/spack install yambo
 ./bin/spack install harfbuzz
 ./bin/spack install qt
+./bin/spack install rclone
+./bin/spack install readline
+./bin/spack install rsync
+./bin/spack install neovim
+./bin/spack install sox
+./bin/spack install emacs
+./bin/spack install exa
+./bin/spack install intel
+./bin/spack install intel-parallel-studio
 
 #math libraries
 ./bin/spack install lapackpp
 ./bin/spack install libflame
 ./bin/spack install fftw
 ./bin/spack install cblas
-./bin/spack install  openblas
+./bin/spack install openblas
+./bin/spack install atlas
 
 #text libraries
 ./bin/spack install json-c
@@ -140,7 +153,15 @@ cd spack*
 ./bin/spack install py-seaborn
 ./bin/spack install py-selenium
 ./bin/spack install py-plotly
+./bin/spack install py-pandas
 ./bin/spack install  py-rpy2
+./bin/spack install   py-torch
+./bin/spack install  py-torch-geometric
+./bin/spack install   py-xarray
+./bin/spack install  py-cartopy
+./bin/spack install  py-mpi4py
+./bin/spack install  py-protobuf
+./bin/spack install  py-tblib
 
 #r stuff
 ./bin/spack install r
@@ -155,21 +176,20 @@ cd spack*
 ./bin/spack install r-ggmap
 ./bin/spack install r-ggplot2
 ./bin/spack install r-plotly
-
-
+./bin/spack install r-proj
+./bin/spack install r-proj4
 
 
 #julia
 ./bin/spack install julia
 
-./bin/spack install intel
-./bin/spack install intel-parallel-studio
-
 
 #tensorflow
 ./bin/spack install py-tensorflow
 ./bin/spack install py-tensorflow-estimator
-./bin/spack install py-tensorflow-estimator
+./bin/spack install py-tensorboard
+./bin/spack install py-tensorboard-plugin-wit
+./bin/spack install py-tensorboardx
 
 #jupyterlab
 ./bin/spack install py-jupyterlab
@@ -183,10 +203,15 @@ cd spack*
 #nlp
 ./bin/spack install py-spacy
 
+#pip
+pip3 install ipyvolume metpy lagranto protobuf
 
-
-
+##
+##
+##
+##
+##
 
 %environment
 #set up spack environment
-  export IMAGE_NAME="tex_live_sherlock"
+export IMAGE_NAME="ipshita_mazama_image"
